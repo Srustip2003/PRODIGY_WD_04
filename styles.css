@@ -1,0 +1,383 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    transition: background-color 0.5s;
+}
+
+header {
+    background-color: #212121;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+#home {
+    background-image: url('https://e0.pxfuel.com/wallpapers/639/598/desktop-wallpaper-web-development.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.welcome-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.typing-text {
+    font-size: 2rem;
+    animation: typing-animation 3s steps(40) forwards;
+    color: #CCFF00;
+}
+
+@keyframes typing-animation {
+    from { width: 0; }
+    to { width: 100%; }
+}
+#about,
+#achievements,
+#contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+#about,
+#achievements{
+    color: black;
+    background-color: rgb(96, 91, 91);
+}
+
+#about {
+    background-image: url("https://img.freepik.com/free-photo/blue-toned-collection-paper-sheets-with-copy-space_23-2148320445.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1708732800&semt=ais");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.typing-text1 {
+    font-size: 2rem;
+    animation: typing-animation 1s steps(70) forwards;
+    color: #6e030a; /* Red color for heading */
+}
+.typing-text3{
+    font-size: 2rem;
+    animation: typing-animation 1s steps(70) forwards;
+    color: #CCFF00; /* Red color for heading */
+}
+.typing-text2 {
+    font-size: 2rem;
+    animation: typing-animation 3s steps(40) forwards;
+    color: #CCFF00;
+}
+
+@keyframes typing-animation {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.1rem; /* Increase font size */
+    line-height: 1.6;
+    color: black; /* Dark gray color for text */
+}
+
+.about-content p:last-child {
+    margin-bottom: 0; /* Remove margin from last paragraph */
+}
+.profile-pic {
+    width: 150px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    border-radius: 50%; /* Creates a circular shape */
+    background-image: url('1111111111111111.jpg'); /* Replace 'your-image-url.jpg' with your image URL */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds shadow effect */
+    border: 3px solid #ffa500; /* Orange border */
+}
+
+.profile-pic:hover {
+    transform: scale(1.05); /* Increases size on hover */
+    transition: transform 0.3s ease; /* Adds smooth transition */
+}
+#projects{
+    background-image: url("https://img.freepik.com/free-vector/paper-style-dynamic-lines-background_23-2149008629.jpg?size=626&ext=jpg&ga=GA1.1.98259409.1708732800&semt=ais");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 150vh;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.card-container {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-right: 10px; /* Add margin between cards */
+    margin-left: 10px; /* Add margin between cards */
+}
+.card img {
+    width: 100%; /* Makes image fill the card */
+    height: auto; /* Preserves aspect ratio */
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    color: #333; /* Title color */
+}
+
+.card-content p {
+    color: #666; /* Description color */
+}
+
+.github-link {
+    display: inline-block;
+    background-color: #ffa500; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.github-link:hover {
+    background-color: #e69500; /* Darker color on hover */
+}
+
+#achievements {
+    background-image: url("https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?cs=srgb&dl=pexels-adrien-olichon-2387793.jpg&fm=jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skill-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    margin: 10px;
+    width: 200px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff; /* Text color in dark mode */
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ffffff; /* Skill bar color in dark mode */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #ffa500;
+    transition: width 1s ease;
+}
+#achievements {
+    background-color: #000000; /* Black background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.achievement-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievement {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* White box shadow */
+    max-width: 600px;
+}
+
+.achievement-text {
+    color: #ffffff; /* White text color */
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.section {
+    padding: 50px 20px;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form-container h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    animation: slideInDown 1s ease;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideInUp 1s ease;
+}
+
+.contact-form-container label {
+    width: 800px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.contact-form-container input[type="text"],
+.contact-form-container input[type="email"],
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form-container textarea {
+    resize: vertical;
+}
+
+.contact-form-container button {
+    padding: 10px 20px;
+    background-color: #ffa500;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form-container button:hover {
+    background-color: #e69500;
+    animation: pulse 1s infinite;
+}
+
+footer {
+    background-color: #212121;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+@keyframes slideInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
